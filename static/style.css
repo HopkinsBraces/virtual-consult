@@ -1,7 +1,15 @@
 body {
   font-family: Roboto;
   color: #58595B;
-  padding: 0 15%;;
+  padding: 0 15%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-family: Roboto;
+      color: #58595B;
+      padding: 0 2%;
+    }
 }
 
 input[type=text], select {
