@@ -2,103 +2,63 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <style>
-      body {
-        font-family: Arial;
-        padding: 0 15%;;
-      }
+    <title>Virtual Consultation</title>
 
-      input[type=text], select {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          display: block;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          box-sizing: border-box;
-      }
+    <!-- START STYLESHEETS -->
+    <link rel="stylesheet" href="static/style.css">
+    <!-- END STYLESHEETS -->
 
-      input[type=file] {
-          display: block;
-          padding: 4px 20px;
-          margin: 8px 0;
-          color:#66B3E3;
-      }
+    <!-- START FOTNS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <!-- END FOTNS -->
 
-      input[type=submit] {
-          width: 100%;
-          background-color: #66B3E3;
-          color: white;
-          padding: 14px 20px;
-          margin: 8px 0;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-      }
-
-      input[type=submit]:hover {
-          background-color: #5392BA;
-      }
-
-      textarea {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-
-      div.wrapper {
-          border-radius: 5px;
-          background-color: #f2f2f2;
-          padding: 20px;
-      }
-
-      img {
-        margin-bottom: 5px;
-      }
-
-      .require {
-        color: red;
-      }
-
-    </style>
   </head>
   <body>
 
     <div class="wrapper">
-      <div class="virtual-example">
-        <h2>Front</h2>
-        <p>Here are the instructions for this picture</p>
-        <img src="static/front.png" alt="">
+      <div class="responsive">
+        <h2>Get Started!</h2>
+        <p>
+          Please take a moment to capture the following photos; you may need to grab a friend to help.
+        </p>
+        <p>
+          Once you have all of your photos, just submit them and that's it! Sit back from the comfort of your home as we create a custom treatment plan for you!
+        </p>
       </div>
       <div class="virtual-example">
-        <h2>Right</h2>
-        <p>Here are the instructions for this picture</p>
-        <img src="static/right.png" alt="">
+        <h3>Front</h3>
+        <p>Look directly into the camera and relax your face!</p>
+        <img src="static/front.jpg" class="responsive" alt="">
       </div>
       <div class="virtual-example">
-        <h2>Left</h2>
-        <p>Here are the instructions for this picture</p>
-        <img src="static/left.png" alt="">
+        <h3>Smile</h3>
+        <p>Look directly into the camera and smile as big as you can!</p>
+        <img src="static/smile.jpg" alt="" class="responsive">
       </div>
       <div class="virtual-example">
-        <h2>Top</h2>
-        <p>Here are the instructions for this picture</p>
-        <img src="static/top.png" alt="">
+        <h3>Profile</h3>
+        <p>Turn to your left so the camera captures the right side of your face!</p>
+        <img src="static/profile.jpg" alt="" class="responsive">
       </div>
       <div class="virtual-example">
-        <h2>Bottom</h2>
-        <p>Here are the instructions for this picture</p>
-        <img src="static/bottom.png" alt="">
+        <h3>Left</h3>
+        <p>Bite down on your molars and pull your cheeks back as far as you can!</p>
+        <img src="static/left.jpg" alt="" class="responsive">
       </div>
       <div class="virtual-example">
-        <h2>Front</h2>
-        <p>Here are the instructions for this picture</p>
-        <img src="static/virtual-smile.jpg" alt="">
+        <h3>Right</h3>
+        <p>Bite down on your molars and pull your cheeks back as far as you can!</p>
+        <img src="static/right.jpg" alt="" class="responsive">
+      </div>
+      <div class="virtual-example">
+        <h3>Upper</h3>
+        <p>Tilt your head back and open your mouth as wide as you can!</p>
+        <img src="static/upper.jpg" alt="" class="responsive">
+      </div>
+      <div class="virtual-example">
+        <h3>Lower</h3>
+        <p>Tilt your chin down and open your mouth as wide as you can!</p>
+        <img src="static/lower.jpg" alt="" class="responsive">
       </div>
 
       <form action="mailto:b.brooks@hopkinsbraces.com">
@@ -156,7 +116,7 @@
         <div>
           <span class="require">*</span>
           <input type="checkbox">
-          <span>I agree to send these pictures via email, and I understand that the the virtual diagnosis may require additional records.</span>
+          <span>I understand that the virtual diagnosis may require additional records.</span>
         </div>
 
         <input type="submit" value="Submit">
