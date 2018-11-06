@@ -1,18 +1,16 @@
-@media only screen and (min-width: 960px) {
-    body {
-      font-family: Roboto, sans-serif;
-      color: #58595B;
-      padding: 0 15%;
-    }
+@media only screen and (min-width: 1300px) {
+  body {
+    padding: 0 15%;
+    font-family: Roboto, sans-serif;
+  }
 
-    .responsive {
-      width: 35%;
-      height: auto;
-    }
-
+  .instructions {
+    display: flex;
+  }
 }
 
-@media only screen and (max-width: 960px) {
+
+@media only screen and (min-width: 650px) and (max-width: 1299px){
     body {
       font-family: Roboto, sans-serif;
       color: #58595B;
@@ -20,8 +18,55 @@
     }
 
     .responsive {
-      width: 75%;
+      width: 100%;
       height: auto;
+    }
+
+    .instructions {
+      display:flex;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+      font-family: Roboto, sans-serif;
+      color: #58595B;
+      padding: 0;
+    }
+
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+
+    .instructions {
+      display:flex;
+      flex-flow: column;
+    }
+
+    .left-panel-ev {
+      flex: 1;
+      text-align: center;
+      order: 2;
+    }
+
+
+    .left-panel-od {
+      flex: 1;
+      text-align: center;
+      order: 1;
+    }
+    .right-panel-od {
+      flex: 1;
+      text-align: center;
+      order: 2;
+    }
+
+    .right-panel-ev {
+      flex: 1;
+      text-align: center;
+      order: 1;
     }
 
 }
@@ -74,10 +119,6 @@ div.wrapper {
     padding: 20px;
 }
 
-img {
-  margin-bottom: 5px;
-}
-
 .responsive h2 {
   color: #66B3E3;
   font-size: 3em;
@@ -86,6 +127,11 @@ img {
 
 p {
   line-height: 1.5em;
+  margin: 0;
+}
+
+h3, h2, h1 {
+  margin: 0;
 }
 
 i {
@@ -118,10 +164,6 @@ i {
   background-color: white;
 }
 
-.instructions {
-  margin: auto;
-}
-
 .responsive-logo {
   width: 50%;
   height: auto;
@@ -130,5 +172,29 @@ i {
 
 .brand-header {
   width: 100%;
+  text-align: center;
+}
+
+.instructions {
+
+}
+
+.left-panel-ev {
+  flex: 1;
+  text-align: center;
+}
+
+.right-panel-od {
+  flex: 1;
+  text-align: center;
+}
+
+.left-panel-od {
+  flex: 1;
+  text-align: center;
+}
+
+.right-panel-ev {
+  flex: 1;
   text-align: center;
 }
