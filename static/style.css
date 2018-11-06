@@ -1,6 +1,6 @@
 @media only screen and (min-width: 960px) {
     body {
-      font-family: Roboto;
+      font-family: Roboto, sans-serif;
       color: #58595B;
       padding: 0 15%;
     }
@@ -14,7 +14,7 @@
 
 @media only screen and (max-width: 960px) {
     body {
-      font-family: Roboto;
+      font-family: Roboto, sans-serif;
       color: #58595B;
       padding: 0;
     }
@@ -88,6 +88,47 @@ p {
   line-height: 1.5em;
 }
 
+i {
+  font-size: 2em;
+  margin: 0 15px;
+}
+
 .require {
   color: red;
+}
+
+.style-bar {
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.blue {
+  color: white;
+  background-color: #66B3E3;
+}
+
+.grey {
+  color: white;
+  background-color: #58595B;
+}
+
+.white {
+  color: #58595B;
+  background-color: white;
+}
+
+.instructions {
+  margin: auto;
+}
+
+.responsive-logo {
+  width: 50%;
+  height: auto;
+  margin: 20px;
+}
+
+.brand-header {
+  width: 100%;
+  text-align: center;
 }
