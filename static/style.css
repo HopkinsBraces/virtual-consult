@@ -7,6 +7,11 @@
   .instructions {
     display: flex;
   }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
 }
 
 
@@ -45,30 +50,26 @@
       flex-flow: column;
     }
 
-    .left-panel-ev {
+    .right-panel-ev > p, .left-panel-od > p{
+      font-size: 1.1em;
+      margin: 0 20px;
+    }
+
+    .left-panel-ev, .right-panel-od {
       flex: 1;
       text-align: center;
       order: 2;
     }
 
-
-    .left-panel-od {
+    .left-panel-od, .right-panel-ev {
       flex: 1;
       text-align: center;
       order: 1;
     }
-    .right-panel-od {
-      flex: 1;
-      text-align: center;
-      order: 2;
-    }
+}
 
-    .right-panel-ev {
-      flex: 1;
-      text-align: center;
-      order: 1;
-    }
-
+form {
+  margin-top: 20px;
 }
 
 input[type=text], select {
@@ -97,6 +98,8 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 input[type=submit]:hover {
@@ -134,6 +137,10 @@ h3, h2, h1 {
   margin: 0;
 }
 
+article {
+  margin-top: 20px;
+}
+
 i {
   font-size: 2em;
   margin: 0 15px;
@@ -144,7 +151,7 @@ i {
 }
 
 .style-bar {
-  padding: 5px 0;
+  padding: 15px 0;
   width: 100%;
   text-align: center;
 }
@@ -167,7 +174,7 @@ i {
 .responsive-logo {
   width: 50%;
   height: auto;
-  margin: 20px;
+  margin: 40px;
 }
 
 .brand-header {
@@ -179,22 +186,37 @@ i {
 
 }
 
-.left-panel-ev {
+
+/* PICTURE SIDE */
+.right-panel-od, .left-panel-ev {
   flex: 1;
   text-align: center;
 }
 
-.right-panel-od {
+/* TEXT SIDE */
+.right-panel-ev, .left-panel-od {
   flex: 1;
   text-align: center;
+  margin: auto;
+  padding: 30px 0;
 }
 
-.left-panel-od {
-  flex: 1;
-  text-align: center;
+.right-panel-ev > h3, .left-panel-od > h3{
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #66B3E3;
 }
 
-.right-panel-ev {
-  flex: 1;
+.right-panel-ev > p, .left-panel-od > p{
+  font-size: 1.4em;
+  margin: 0 25px;
+}
+
+.number {
+  color: white;
+  background-color: #66B3E3;
   text-align: center;
+  padding: 0 20px;
+  border-radius: 50%;
+  vertical-align: text-top;
 }
