@@ -68,28 +68,7 @@
     }
 }
 
-form {
-  margin-top: 20px;
-}
-
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=file] {
-    display: block;
-    padding: 4px 20px;
-    margin: 8px 0;
-    color:#66B3E3;
-}
-
-input[type=submit] {
+button {
     width: 100%;
     background-color: #66B3E3;
     color: white;
@@ -102,7 +81,7 @@ input[type=submit] {
     font-weight: bold;
 }
 
-input[type=submit]:hover {
+button:hover {
     background-color: #5392BA;
 }
 
