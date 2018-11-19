@@ -8,7 +8,6 @@
 
     <!-- START STYLESHEETS -->
     <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- END STYLESHEETS -->
 
     <!-- START FOTNS -->
@@ -17,107 +16,113 @@
 
   </head>
   <body>
-    <div class="brand-header">
-      <img class="responsive-logo" src="static/HopkinsBraces_Logo transparent.png" alt="">
-    </div>
 
-    <!-- INSTRUCTION STYLE BARS START -->
-    <div class="style-bar blue">
-      <h2>
-        <i class="fas fa-camera"></i>
-        Snap these pics
-      </h2>
-    </div>
-    <div class="style-bar white">
-      <h2>
-        <i class="fas fa-upload"></i>
-        Upload your shoot
-      </h2>
-    </div>
-    <div class="style-bar grey">
-      <h2>
-        <i class="far fa-grin-beam"></i>
-        Let the smiling begin!
-      </h2>
-    </div>
-    <!-- INSTRUCTION STYLE BARS END -->
+    <div class="wrapper">
+      <div class="responsive">
+        <h2>Getting Started!</h2>
+        <p>
+          Please take a moment to capture the following photos; you may need to grab a friend to help.
+        </p>
+        <p>
+          Once you have all of your photos, just submit them and that's it! Sit back from the comfort of your home as we create a custom treatment plan for you!
+        </p>
+      </div>
+      <div class="virtual-example">
+        <h3>Front</h3>
+        <p>Look directly into the camera and relax your face!</p>
+        <img src="static/front.jpg" class="responsive" alt="">
+      </div>
+      <div class="virtual-example">
+        <h3>Smile</h3>
+        <p>Look directly into the camera and smile as big as you can!</p>
+        <img src="static/smile.jpg" alt="" class="responsive">
+      </div>
+      <div class="virtual-example">
+        <h3>Profile</h3>
+        <p>Turn to your left so the camera captures the right side of your face!</p>
+        <img src="static/profile.jpg" alt="" class="responsive">
+      </div>
+      <div class="virtual-example">
+        <h3>Left</h3>
+        <p>Bite down on your molars and pull your cheeks back as far as you can!</p>
+        <img src="static/left.jpg" alt="" class="responsive">
+      </div>
+      <div class="virtual-example">
+        <h3>Right</h3>
+        <p>Bite down on your molars and pull your cheeks back as far as you can!</p>
+        <img src="static/right.jpg" alt="" class="responsive">
+      </div>
+      <div class="virtual-example">
+        <h3>Upper</h3>
+        <p>Tilt your head back and open your mouth as wide as you can!</p>
+        <img src="static/upper.jpg" alt="" class="responsive">
+      </div>
+      <div class="virtual-example">
+        <h3>Lower</h3>
+        <p>Tilt your chin down and open your mouth as wide as you can!</p>
+        <img src="static/lower.jpg" alt="" class="responsive">
+      </div>
 
+      <form action="mailto:b.brooks@hopkinsbraces.com">
+        <span class="require">*</span>
+        <label for="fName">Full Name</label>
+        <span>
+          <input required type="text" name="fName">
+        </span>
 
-    <!-- MAIN CONTENT -->
-    <article>
-      <div class="instructions">
-        <div class="left-panel-od white">
-          <h3>
-            <span class="number">1</span>
-            Front
-          </h3>
-          <p>Look directly into the camera and relax your face!</p>
-        </div>
-        <div class="right-panel-od">
-          <img src="static/front.jpg" class="responsive" alt="">
-        </div>
-      </div>
-      <div class="instructions">
-        <div class="left-panel-ev">
-          <img src="static/smile.jpg" alt="" class="responsive">
-        </div>
-        <div class="right-panel-ev white">
+        <span class="require">*</span>
+        <label for="email-add">Email Address</label>
+        <span>
+          <input required type="text" name="email-add">
+        </span>
 
-          <h3>
-            <span class="number">2</span>
-            Smile
-          </h3>
-          <p>Look directly into the camera and smile as big as you can!</p>
+        <span class="require">*</span>
+        <label for="phone-num">Phone Number</label>
+        <span>
+          <input required type="text" name="phone-num">
+        </span>
+
+        <span class="require">*</span>
+        <label for="b-day">Patient Birthdate</label>
+        <span>
+          <input required type="text" name="b-day">
+        </span>
+
+        <label for="message">Message</label>
+        <textarea name="message" cols="100%" rows='10'></textarea>
+
+        <span class="require">*</span>
+        <label for="front">Front</label>
+        <input required type="file" name="front" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-invalid="false">
+
+        <span class="require">*</span>
+        <label for="right">Right</label>
+        <input required type="file" name="right" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-invalid="false">
+
+        <span class="require">*</span>
+        <label for="left">Left</label>
+        <input required type="file" name="left" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-invalid="false">
+
+        <span class="require">*</span>
+        <label for="top">Top</label>
+        <input required type="file" name="top" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-invalid="false">
+
+        <span class="require">*</span>
+        <label for="bottom">Bottom</label>
+        <input required type="file" name="bottom" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-invalid="false">
+
+        <span class="require">*</span>
+        <label for="selfie">Selfie</label>
+        <input required type="file" name="selfie" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" aria-invalid="false">
+
+        <div>
+          <span class="require">*</span>
+          <input type="checkbox">
+          <span>I understand that the virtual diagnosis may require additional records.</span>
         </div>
-      </div>
-      <div class="instructions">
-        <div class="left-panel-od white">
-          <h3>
-            <span class="number">3</span>
-            Profile
-          </h3>
-          <p>Turn to your left so the camera captures the right side of your face!</p>
-        </div>
-        <div class="right-panel-od">
-          <img src="static/profile.jpg" alt="" class="responsive">
-        </div>
-      </div>
-      <div class="instructions">
-        <div class="left-panel-ev">
-          <img src="static/right.jpg" alt="" class="responsive">
-        </div>
-        <div class="right-panel-ev white">
-          <h3>
-            <span class="number">4</span>
-            Right
-          </h3>
-          <p>Bite down on your molars and pull your cheeks back as far as you can!</p>
-        </div>
-      </div>
-      <div class="instructions">
-        <div class="left-panel-od white">
-          <h3>
-            <span class="number">5</span>
-            Upper
-          </h3>
-          <p>Tilt your head back and open your mouth as wide as you can!</p>
-        </div>
-        <div class="right-panel-od">
-          <img src="static/upper.jpg" alt="" class="responsive">
-        </div>
-      </div>
-      <div class="instructions">
-        <div class="left-panel-ev">
-          <img src="static/lower.jpg" alt="" class="responsive">
-        </div>
-        <div class="right-panel-ev white">
-          <h3>
-            <span class="number">6</span>
-            Lower
-          </h3>
-          <p>Tilt your chin down and open your mouth as wide as you can!</p>
-        </div>
-      </div>
-    </article>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </body>
 </html>
