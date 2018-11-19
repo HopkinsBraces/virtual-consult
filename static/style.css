@@ -150,15 +150,14 @@ i {
   background-color: white;
 }
 
-.responsive-logo {
-  width: 50%;
-  height: auto;
-  margin: 40px;
-}
-
 .brand-header {
   width: 100%;
   text-align: center;
+}
+
+.brand-header > h1 {
+  color: #58595B;
+  margin: 30px;
 }
 
 .instructions {
