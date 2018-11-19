@@ -1,74 +1,49 @@
-@media only screen and (min-width: 1300px) {
-  body {
-    padding: 0 15%;
-    font-family: Roboto, sans-serif;
-  }
+@media only screen and (min-width: 960px) {
+    body {
+      font-family: Roboto;
+      color: #58595B;
+      padding: 0 15%;
+    }
 
-  .instructions {
-    display: flex;
-  }
+    .responsive {
+      width: 35%;
+      height: auto;
+    }
 
-  .responsive {
+}
+
+@media only screen and (max-width: 960px) {
+    body {
+      font-family: Roboto;
+      color: #58595B;
+      padding: 0;
+    }
+
+    .responsive {
+      width: 75%;
+      height: auto;
+    }
+
+}
+
+input[type=text], select {
     width: 100%;
-    height: auto;
-  }
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-
-@media only screen and (min-width: 650px) and (max-width: 1299px){
-    body {
-      font-family: Roboto, sans-serif;
-      color: #58595B;
-      padding: 0;
-    }
-
-    .responsive {
-      width: 100%;
-      height: auto;
-    }
-
-    .instructions {
-      display:flex;
-    }
-
+input[type=file] {
+    display: block;
+    padding: 4px 20px;
+    margin: 8px 0;
+    color:#66B3E3;
 }
 
-@media only screen and (max-width: 650px) {
-    body {
-      font-family: Roboto, sans-serif;
-      color: #58595B;
-      padding: 0;
-    }
-
-    .responsive {
-      width: 100%;
-      height: auto;
-    }
-
-    .instructions {
-      display:flex;
-      flex-flow: column;
-    }
-
-    .right-panel-ev > p, .left-panel-od > p{
-      font-size: 1.1em;
-      margin: 0 20px;
-    }
-
-    .left-panel-ev, .right-panel-od {
-      flex: 1;
-      text-align: center;
-      order: 2;
-    }
-
-    .left-panel-od, .right-panel-ev {
-      flex: 1;
-      text-align: center;
-      order: 1;
-    }
-}
-
-button {
+input[type=submit] {
     width: 100%;
     background-color: #66B3E3;
     color: white;
@@ -77,8 +52,6 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 2em;
-    font-weight: bold;
 }
 
 button:hover {
@@ -101,6 +74,10 @@ div.wrapper {
     padding: 20px;
 }
 
+img {
+  margin-bottom: 5px;
+}
+
 .responsive h2 {
   color: #66B3E3;
   font-size: 3em;
@@ -109,92 +86,8 @@ div.wrapper {
 
 p {
   line-height: 1.5em;
-  margin: 0;
-}
-
-h3, h2, h1 {
-  margin: 0;
-}
-
-article {
-  margin-top: 20px;
-}
-
-i {
-  font-size: 2em;
-  margin: 0 15px;
 }
 
 .require {
   color: red;
-}
-
-.style-bar {
-  padding: 15px 0;
-  width: 100%;
-  text-align: center;
-}
-
-.blue {
-  color: white;
-  background-color: #66B3E3;
-}
-
-.grey {
-  color: white;
-  background-color: #58595B;
-}
-
-.white {
-  color: #58595B;
-  background-color: white;
-}
-
-.brand-header {
-  width: 100%;
-  text-align: center;
-}
-
-.brand-header > h1 {
-  color: #58595B;
-  margin: 30px;
-}
-
-.instructions {
-
-}
-
-
-/* PICTURE SIDE */
-.right-panel-od, .left-panel-ev {
-  flex: 1;
-  text-align: center;
-}
-
-/* TEXT SIDE */
-.right-panel-ev, .left-panel-od {
-  flex: 1;
-  text-align: center;
-  margin: auto;
-  padding: 30px 0;
-}
-
-.right-panel-ev > h3, .left-panel-od > h3{
-  font-size: 3em;
-  margin-bottom: 10px;
-  color: #66B3E3;
-}
-
-.right-panel-ev > p, .left-panel-od > p{
-  font-size: 1.4em;
-  margin: 0 25px;
-}
-
-.number {
-  color: white;
-  background-color: #66B3E3;
-  text-align: center;
-  padding: 0 20px;
-  border-radius: 50%;
-  vertical-align: text-top;
 }
